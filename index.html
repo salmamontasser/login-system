@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login system</title>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- main style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="text-white">
+    <header class="header fixed-top">
+        <nav class="navbar  navbar-light navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-semibold text-info" href="#">Smart Login System</a>
+            </div>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="container">
+            <!-- login Form -->
+            <div class="card-body w-75 my-5 p-5 m-auto">
+                <label class="text-capitalize mb-2" for="userEmail">Email: </label>
+                <input type="email" id="userEmail" class="form-control mb-2 bg-transparent" required
+                    placeholder="Enter ur Email">
+                <div id="emailMass" class="alert alert-danger text-capitalize d-none p-2 rounded-2">
+
+                </div>
+                <label class="text-capitalize mb-2" for="userPassword">Password: </label>
+                <input type="password" id="userPassword" class="form-control mb-2 bg-transparent" required
+                    placeholder="Enter ur Password">
+                <div id="passMassage" class=" alert-massage d-none text-capitalize bg-white p-2 rounded-2">
+
+                </div>
+                <button id="loginBtn" class="btn btn-info  w-100 text-center m-auto">
+                    <a href="pages/home.html" class="text-white">logIn <span></span></a>
+                </button>
+                <p class="mt-2 mx-auto text-center">Create Account? <a href="pages/singup.html">SignUp</a></p>
+            </div>
+        </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

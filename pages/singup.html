@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login system</title>
+    <!-- google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- main style sheet -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="text-white">
+    <header class="header fixed-top">
+        <nav class="navbar  navbar-light navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand  fw-semibold text-info" href="#">Smart Login System</a>
+            </div>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="container">
+            <!-- Signup Form -->
+            <div class="card-body w-75 my-5 p-5 m-auto">
+                <label class="text-capitalize mb-2" for="userName">User Name:</label>
+                <input type="text" id="userName" class="form-control mb-2 bg-transparent" required
+                    placeholder="Enter userName">
+                <div id="uNameMassage" class="alert alert-danger text-capitalize d-none p-2 rounded-2">
+
+                </div>
+                <label class="text-capitalize mb-2" for="email">Email: </label>
+                <input type="email" id="email" class="form-control mb-2 bg-transparent" required
+                    placeholder="Enter ur Email">
+                <div id="emailMassage" class="alert alert-danger text-capitalize d-none p-2 rounded-2">
+
+                </div>
+                <label class="text-capitalize mb-2" for="password">Password: </label>
+                <input type="password" id="password" class="form-control mb-2 bg-transparent" required
+                    placeholder="Enter ur Password">
+                <div id="passwordTipInfo" class="passwordTipInfo  d-none">
+                    <h4>Password requirements:</h4>
+                    <ul class="requirements">
+                        <li id="pwdtip1"><i id="check" class="fa-solid fa-circle me-2"></i><span>8 to 14
+                                characters</span></li>
+                        <li id="passtip2"><i class="fa-solid fa-circle me-2"></i><span>At least one number</span></li>
+                        <li id="passtip3"><i class="fa-solid fa-circle me-2"></i><span>At least one lowercase alphabet
+                            </span></li>
+                        <li id="passtip4"><i class="fa-solid fa-circle me-2"></i><span>At least one special
+                                character</span></li>
+                        <li id="passtip5"><i class="fa-solid fa-circle me-2"></i><span>At least one uppercase
+                                alphabet</span></li>
+                    </ul>
+                </div>
+                <button id="signupBtn" class="btn btn-info  w-100 text-center m-auto">
+                    <a href="../index.html" class="text-white">SignUp <span></span></a>
+                </button>
+                <p class="mt-2 mx-auto text-center">You have Account? <a href="../index.html" >Log In</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- bootstrap -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!-- main js -->
+    <script src="../js/main.js"></script>
+    <!-- signUP JS -->
+    <script src="../js/signup.js"></script>
+</body>
+
+</html>
